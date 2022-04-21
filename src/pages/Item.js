@@ -13,8 +13,8 @@ function Item({ item }) {
       <td className='name'>{item.name}</td>
       <td className='idolType'>{item.idolType}</td>
       <td className='attribute'>{item.centerEffect.attribute}</td>    
-      <td className='effectId'>{item.skill.effectId}</td>
-      <td className='interval'>{item.skill.interval}</td>
+      <td className='effectId'>{item.skill?.effectId}</td>
+      <td className='interval'>{item.skill?.interval}</td>
     </tr>
   )
 }

@@ -23,6 +23,8 @@ function Detail() {
     })()
   }, [no])
 
+  
+
   return (
     <div className="detail-wrap">
       <div className='image'>

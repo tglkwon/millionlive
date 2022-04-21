@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Item from './Item'
 
-// import './List.css'
+import './List.css'
 
 
 function List() {
@@ -14,7 +14,7 @@ function List() {
         method: 'GET',
         url: "https://api.matsurihi.me/mltd/v1/cards"
       })
-      setList(data.list)
+      setList(data)
     })()
   }, [])
       
@@ -22,7 +22,7 @@ function List() {
     <table className='List'>
       <tbody>
         {list.map(o => {
-          return (<Item item={o} key={o.no}/>)
+          return (<Item item={o} key={o.resourceId}/>)
         })}
       </tbody>
     </table>

@@ -8,10 +8,9 @@ import Detail from './pages/Detail'
 import './Main.css'
 
 function Main() {
-
   return (
     <Routes>
-      {/* <Route path='/' element={<List />} /> */}
+      <Route path='/' element={<List />} />
       <Route path='/detail/:id' element={<Detail />}  />
     </Routes>
   )

@@ -9,7 +9,6 @@ function Header() {
         <button>Menu</button>
         <h1>Million Live Portal</h1>
         <button>Home</button>
-        {/* <Route path='/' element={<List />} /> */}
       </div>
     // </Routes> 
   )
